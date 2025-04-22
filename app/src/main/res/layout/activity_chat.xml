@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity"
+    android:background="#F8F9FA">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="#3F51B5"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maslahat"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
+    <!-- Chat Output -->
+    <ScrollView
+        android:id="@+id/scrollContainer"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_centerInParent="true"
+        android:fillViewport="true"
+        android:layout_margin="10dp"
+        android:background="@android:color/white"
+        android:elevation="2dp"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvResponse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Javob shu yerda ko‘rinadi"
+            android:textSize="18sp"
+            android:textColor="#212529"
+            android:lineSpacingExtra="4dp"/>
+    </ScrollView>
+
+    <!-- Input panel -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/inputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="8dp"
+        android:text="Qaytish"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:iconSize="35dp"
+        android:layout_alignParentBottom="true"
+        app:iconGravity="end"
+        app:backgroundTint="#3F51B5"
+        app:icon="@drawable/baseline_refresh_24"
+        android:layout_marginBottom="8dp"
+        android:layout_marginHorizontal="4dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="2dp"
+        />
+
+
+</RelativeLayout>
