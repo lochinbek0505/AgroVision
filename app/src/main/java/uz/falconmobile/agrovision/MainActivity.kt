@@ -47,11 +47,17 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.btnCapture.setOnClickListener {
+            binding.btnCapture.setOnClickListener {
+                if (kasallik.isNotEmpty()) {
+                    val intent = Intent(this@MainActivity, ChatActivity::class.java)
+                    intent.putExtra("kasal", kasallik)
+                    Log.e("test", kasallik)
+                    startActivity(intent)
+                } else {
+                    Toast.makeText(this, "Iltimos, dastlab kasallik aniqlanishini kuting.", Toast.LENGTH_SHORT).show()
+                }
+            }
 
-            var intent = Intent(this@MainActivity, ChatActivity::class.java)
-            intent.putExtra("kasal", kasallik)
-            Log.e("test",kasallik)
-            startActivity(intent)
 
         }
 

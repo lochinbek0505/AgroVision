@@ -26,7 +26,6 @@ class ChatActivity : AppCompatActivity() {
 
     private val client = OkHttpClient()
 
-    // 👇 BU YERGA O'ZINGIZNING GEMINI API KALITINI QO'YING
     private val API_KEY = "AIzaSyA5TZlLHHbmvO0JloXOzzhh2tyKpNb0tJQ"
 
     private lateinit var binding: ActivityChatBinding
