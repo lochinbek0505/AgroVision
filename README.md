@@ -22,4 +22,4 @@ AgroVision — bu o‘simliklar kasalliklarini aniqlashga yordam beruvchi mobil 
 ## 🔧 O‘rnatish
 
 ```bash
-git clone https://github.com/username/agrovision.git
+git clone https://github.com/lochinbek0505/AgroVision.git
